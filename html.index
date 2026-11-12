@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GRROOMERS — Mobile Dog Grooming</title>
+<meta name="description" content="Professional mobile dog grooming: baths, trims, nail care and hygiene. We come to you.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header class="hero" id="top">
+  <h1>GRROOMERS</h1>
+  <p><strong>Professional dog grooming</strong> for happy tails ✨ baths, trims, nail care, toys — and we come to you!</p>
+  <nav aria-label="Primary">
+    <a href="#services">Services</a><a href="#pricing">Pricing</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+<main id="main" tabindex="-1">
+  <section>
+    <h2>Welcome to GRROOMERS</h2>
+    <p>We make grooming easy and comfortable for your dog. From a gentle bath to a full trim, our goal is the same: <em>clean coats, healthy skin, confident pups and zero mileage.</em></p>
+    <article class="special">
+      <h3>Weekend Special!</h3>
+      <p>Book any weekend and get a <strong>Bath + Brush</strong> with a <strong>free nail check</strong> — only k200.</p>
+      <p><strong>Tip:</strong> bring a favourite toy to help your dog relax.</p>
+    </article>
+  </section>
+  <section id="services" aria-labelledby="services-title">
+    <h2 id="services-title">Services</h2>
+    <div class="grid" id="services-list"></div>
+  </section>
+  <section id="pricing" aria-labelledby="pricing-title">
+    <h2 id="pricing-title">Pricing</h2>
+    <p>Prices vary by coat condition, size and the services chosen.</p>
+    <table aria-label="Service pricing">
+      <thead><tr><th scope="col">Service</th><th scope="col">Small</th><th scope="col">Medium</th><th scope="col">Large</th></tr></thead>
+      <tbody id="price-rows"></tbody>
+    </table>
+    <p>Prefer a call? <a href="tel:+260976904025">+260976904025</a> for a tailored quote.</p>
+  </section>
+  <section id="gallery" aria-labelledby="gallery-title">
+    <h2 id="gallery-title">Gallery</h2>
+    <div class="grid" id="gallery-list"></div>
+  </section>
+  <section id="reviews" aria-labelledby="reviews-title">
+    <h2 id="reviews-title">Customer Reviews</h2>  </section>
+  <section id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact &amp; Booking</h2>
+    <form id="booking">
+      <label for="name">Your name</label><input id="name" name="name" placeholder="e.g., Sam" required autocomplete="name">
+      <label for="email">Email</label><input id="email" name="email" type="email" placeholder="e.g., sam@email.com" required autocomplete="email">
+      <label for="phone">Phone (optional)</label><input id="phone" name="phone" type="tel" placeholder="e.g., +260..." autocomplete="tel">
+      <label for="dog">Dog name</label><input id="dog" name="dog" placeholder="e.g., Max" required>
+      <label for="service">Service needed</label>
+      <select id="service" name="service" required>
+        <option value="" selected disabled>Choose...</option>
+        <option>Bath &amp; Brush</option><option>Hair Trim &amp; Styling</option><option>Nail Care</option><option>Ear &amp; Hygiene Care</option><option>Full Groom</option>
+      </select>
+      <label for="size">Dog size</label>
+      <select id="size" name="size" required>
+        <option value="" selected disabled>Select size...</option>
+        <option>Small</option><option>Medium</option><option>Large</option>
+      </select>
+      <label for="notes">Notes</label><textarea id="notes" name="notes" rows="3" placeholder="Any matting, allergies or preferences?"></textarea>
+      <label><input type="checkbox" required> I confirm the information is correct.</label>
+      <div class="row"><button type="submit">Request booking</button><button type="reset">Clear form</button></div>
+      <p class="ok" id="confirm" role="status" hidden></p>
+    </form>
+    <h3>Quick details</h3>
+    <dl>
+      <dt>Location</dt><dd>Shiela, Shibeleka</dd>
+      <dt>Hours</dt><dd>Tue–Fri: 10:00–16:00</dd>
+      <dt>Emergency</dt><dd>Urgent cases only — <a href="https://wa.me/260976904025">WhatsApp us</a></dd>
+    </dl>
+  </section>
+</main>
+<footer>
+  <p>© 2026 GRROOMERS. All rights reserved.</p>
+  <p><a href="#top">Back to top</a> · <a href="#contact">Contact</a> · Follow us on Instagram and TikTok — you know the name!</p>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
